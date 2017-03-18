@@ -1,0 +1,4 @@
+127.0.0.1 - - [18/Mar/2017:12:13:29 +0200] "GET /favicon.ico HTTP/1.1" 404 209 "http://my_first_mvc.loc/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [18/Mar/2017:12:16:23 +0200] "GET / HTTP/1.1" 200 23818 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [18/Mar/2017:12:16:23 +0200] "GET / HTTP/1.1" 200 23557 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+127.0.0.1 - - [18/Mar/2017:12:16:24 +0200] "GET / HTTP/1.1" 200 23733 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
