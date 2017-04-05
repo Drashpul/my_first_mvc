@@ -1,0 +1,609 @@
+2017/03/25 13:59:07 [error] 1199#1199: *11 directory index of "/home/user/projects/php/www/my_first_mvc/" is forbidden, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", host: "my_first_mvc.loc"
+2017/03/25 14:06:39 [error] 1199#1199: *14 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(../application/bootstrap.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/public/index.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '../application/bootstrap.php' (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/public/index.php on line 6" while reading upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 14:07:13 [error] 1199#1199: *14 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(../application/bootstrap.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/public/index.php on line 6
+PHP message: PHP Fatal error:  require_once(): Failed opening required '../application/bootstrap.php' (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/public/index.php on line 6" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 14:09:24 [error] 1199#1199: *17 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(core/model.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/bootstrap.php on line 4
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'core/model.php' (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/bootstrap.php on line 4" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 14:59:45 [error] 8304#8304: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: routes in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:00:27 [error] 8304#8304: *1 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined variable: route in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 16" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:15:41 [error] 8304#8304: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:67
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:25 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:25 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:25 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:26 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:26 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:26 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:26 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:26 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:20:27 [error] 8304#8304: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:52 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:53 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:53 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:53 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:53 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:53 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:27:54 [error] 8304#8304: *45 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:40:55 [error] 1224#1224: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:40:55 [error] 1224#1224: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/25 15:40:57 [error] 1224#1224: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/25 15:41:01 [error] 1224#1224: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/26 10:03:23 [error] 1206#1206: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/26 10:03:23 [error] 1206#1206: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/26 10:03:24 [error] 1206#1206: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/26 10:03:28 [error] 1206#1206: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/26 17:50:58 [error] 1215#1215: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/26 17:50:58 [error] 1215#1215: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/26 17:50:59 [error] 1215#1215: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/26 17:51:03 [error] 1215#1215: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/28 08:03:12 [error] 1203#1203: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/28 08:03:12 [error] 1203#1203: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/28 08:03:13 [error] 1203#1203: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/28 08:03:17 [error] 1203#1203: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/28 18:43:37 [error] 1225#1225: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/28 18:43:37 [error] 1225#1225: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/28 18:43:39 [error] 1225#1225: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/28 18:43:44 [error] 1225#1225: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 06:57:42 [error] 1219#1219: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 06:57:42 [error] 1219#1219: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/public/"
+2017/03/29 06:57:48 [error] 1219#1219: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 06:57:54 [error] 1219#1219: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 21:20:38 [error] 1215#1215: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 21:20:38 [error] 1215#1215: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/public/"
+2017/03/29 21:20:44 [error] 1215#1215: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 21:20:47 [error] 1215#1215: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 23:20:16 [error] 1217#1217: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 23:20:16 [error] 1217#1217: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/29 23:20:17 [error] 1217#1217: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/29 23:20:27 [error] 1217#1217: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/30 22:42:38 [error] 1190#1190: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/30 22:42:38 [error] 1190#1190: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/03/30 22:42:38 [error] 1190#1190: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/03/30 22:42:43 [error] 1190#1190: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 07:42:50 [error] 1211#1211: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 07:42:50 [error] 1211#1211: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/04/01 07:42:50 [error] 1211#1211: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 07:42:59 [error] 1211#1211: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 11:11:42 [error] 1218#1218: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/products/aaa"
+2017/04/01 11:18:17 [error] 1194#1194: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 11:18:17 [error] 1194#1194: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_favicon.ico' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/public/"
+2017/04/01 11:20:24 [error] 1194#1194: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 11:20:46 [error] 1194#1194: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_Main' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 11:27:56 [error] 1194#1194: *39 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 11:27:57 [error] 1194#1194: *39 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/aaa HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 11:35:51 [error] 1194#1194: *42 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_products' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /products/ HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 13:06:23 [error] 5144#5144: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'controller_public' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:72
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 72" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 13:32:45 [error] 5144#5144: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(core/ruote.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/bootstrap.php on line 20
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'core/ruote.php' (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/bootstrap.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /public HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 13:32:51 [error] 5144#5144: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require_once(core/ruote.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/bootstrap.php on line 20
+PHP message: PHP Fatal error:  require_once(): Failed opening required 'core/ruote.php' (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/bootstrap.php on line 20" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 13:42:05 [error] 5144#5144: *17 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 14:43:01 [error] 5144#5144: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 14:43:03 [error] 5144#5144: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 14:43:05 [error] 5144#5144: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 20:32:30 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 20:32:30 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/01 20:32:31 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 20:32:31 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/01 20:32:36 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 20:32:36 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/01 20:32:40 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/01 20:32:40 [error] 1189#1189: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/02 18:31:48 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 18:31:49 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/02 18:31:51 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 18:31:51 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/02 18:31:55 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 18:31:55 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/02 18:32:00 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 18:32:00 [error] 1189#1189: *28 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/02 23:15:31 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 23:15:31 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/02 23:15:32 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 23:15:32 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/02 23:15:34 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 23:15:34 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/02 23:15:37 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/02 23:15:37 [error] 1189#1189: *60 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/05 11:28:05 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 11:28:05 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/05 11:28:06 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 11:28:06 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/05 11:28:09 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 11:28:09 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/404"
+2017/04/05 11:28:12 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 11:28:12 [error] 1199#1199: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/05 13:31:17 [error] 6393#6393: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 13:31:17 [error] 6393#6393: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/05 13:36:42 [error] 6393#6393: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  include(application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28
+PHP message: PHP Warning:  include(): Failed opening 'application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 28" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 13:36:42 [error] 6393#6393: *7 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class 'Controller404' not found in /home/user/projects/php/www/my_first_mvc/application/core/route.php:53
+Stack trace:
+#0 /home/user/projects/php/www/my_first_mvc/application/bootstrap.php(21): Route::start()
+#1 /home/user/projects/php/www/my_first_mvc/public/index.php(6): require_once('/home/user/proj...')
+#2 {main}
+  thrown in /home/user/projects/php/www/my_first_mvc/application/core/route.php on line 53" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET /404 HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc", referrer: "http://my_first_mvc.loc/"
+2017/04/05 14:26:40 [error] 6393#6393: *13 FastCGI sent in stderr: "PHP message: PHP Warning:  include(../application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 23
+PHP message: PHP Warning:  include(): Failed opening '../application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"
+2017/04/05 14:28:25 [error] 6393#6393: *18 FastCGI sent in stderr: "PHP message: PHP Warning:  include(../application/views/template_view.php): failed to open stream: No such file or directory in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 23
+PHP message: PHP Warning:  include(): Failed opening '../application/views/template_view.php' for inclusion (include_path='.:/usr/share/php') in /home/user/projects/php/www/my_first_mvc/application/core/view.php on line 23" while reading response header from upstream, client: 127.0.0.1, server: my_first_mvc.loc, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "my_first_mvc.loc"

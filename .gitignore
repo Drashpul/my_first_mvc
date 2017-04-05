@@ -1,0 +1,8 @@
+/.idea
+/logs
+/vendor
+/lib
+/composer.json
+/composer.lock
+
+
