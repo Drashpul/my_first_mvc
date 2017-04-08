@@ -7,6 +7,7 @@ class ControllerPortfolio extends Controller
         $this->model = new Portfolio();
         parent::__construct();
     }
+
     function index()
     {
         $data = $this->model->get_data();

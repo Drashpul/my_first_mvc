@@ -7,7 +7,7 @@
  */
 class ControllerMain extends Controller{
     function index(){
-        var_dump('action_name');
+//        var_dump('action_name');
         $this->view->generate('main_view.php', 'template_view.php');
             }
 }

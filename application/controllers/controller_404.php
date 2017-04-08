@@ -2,9 +2,11 @@
 
 
 
-class Controller404 extends Controller {
-    function __construct()
+class Controller404 extends Controller
+{
+
+    function index()
     {
-        die(123);
+        $this->view->generate('404_view.php', 'template_view.php');
     }
 }
