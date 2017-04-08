@@ -98,8 +98,18 @@ class Model
         ], ' ');
         return $this->query_string;
     }
-
 }
+
+function delete($field, $id)
+{
+    $this->query_type = 'DELETE';
+    $this->field_list = NULL;
+    $this->where($field, $id);
+    return;
+}
+
+
+
 
 //========OLD MODEL============================
 //

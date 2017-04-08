@@ -38,7 +38,7 @@ class DBConnect
     {
         try{
             $app_connect = new PDO(
-                "mysql:dbname=$this->db_name;host=$this->db_host; charset =utf8",
+                "mysql:dbname=$this->db_name;host=$this->db_host; charset=utf8",
                 $this->db_user, $this->db_password);
 
             return $app_connect;
