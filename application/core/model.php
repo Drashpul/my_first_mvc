@@ -1,5 +1,6 @@
 <?php
 
+
 class Model
 {
 
@@ -75,8 +76,7 @@ class Model
     public function get()
     {
         $this->collection = [];
-        $result = $this->db_connection->query($this->getQueryString());
-        if($result) {
+        if ($result = $this->db_connection->query($this->getQueryString())) {
             foreach ($result as $item) {
                 $this->collection[] = $item;
             }
@@ -99,25 +99,6 @@ class Model
         return $this->query_string;
     }
 
-    public function delete($id)
-    {
-        $this->query_type = 'DELETE';
-        $this->feld_list = NULL;
-    }
-
-    /*
-        Модель обычно включает методы выборки данных, это могут быть:
-            > методы нативных библиотек pgsql или mysql;
-            > методы библиотек, реализующих абстракицю данных. Например, методы библиотеки PEAR MDB2;
-            > методы ORM;
-            > методы для работы с NoSQL;
-            > и др.
-    */
-    // метод выборки данных
-    public function get_data()
-    {
-        // todo
-    }
 }
 
 //========OLD MODEL============================

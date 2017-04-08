@@ -9,7 +9,7 @@
     </tr>
     <?php
     foreach ($data as $row) {
-        echo '<tr><td>' . $row['Year'] . '</td><td>' . $row['Site'] . '</td><td>' . $row['Description'] . '</td></tr>';
+        echo '<tr><td>' . $row['year'] . '</td><td>' . $row['site'] . '</td><td>' . $row['description'] . '</td></tr>';
     }
     ?>
 </table>

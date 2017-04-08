@@ -23,20 +23,37 @@ class DBConnect
         $this->db_host = $config['db_host'];
         $this->db_port = $config['db_port'];
     }
+//    public function getConnect()
+//    {
+//        $app_connect = new PDO(
+//            "mysql:dbname=$this->db_name;host=$this->db_host",
+//            $this->db_user, $this->db_password);
+//
+//        return $app_connect;
+//    }
+
+//
+
     public function getConnect()
     {
-        $app_connect = new PDO(
-            "mysql:dbname=$this->db_name;host=$this->db_host",
-            $this->db_user, $this->db_password);
+        try{
+            $app_connect = new PDO(
+                "mysql:dbname=$this->db_name;host=$this->db_host; charset =utf8",
+                $this->db_user, $this->db_password);
 
-        return $app_connect;
+            return $app_connect;
+        } catch (PDOException $e){
+            echo $e->getMessage();
+        }
+
     }
+
 
     static public function connect()
     {
         if (empty(self::$connect)) {
             $connect = new self;
-            return self::$connect = $connect->getConnect();
+            self::$connect = $connect->getConnect();
         }
         return self::$connect;
 
