@@ -25,29 +25,34 @@ class DBConnect
     }
     public function getConnect()
     {
-        $app_connect = mysqli_connect(
-            $this->db_host,
-            $this->db_user,
-            $this->db_password
-        );
-        if(mysqli_connect_error($app_connect)) throw new DBException(
-            'Ошибка подключения к БД!',
-            500
-        );
-        mysqli_select_db($app_connect,
-            $this->db_name
-        );
+        $app_connect = new PDO(
+            "mysql:dbname=$this->db_name;host=$this->db_host",
+            $this->db_user, $this->db_password);
 
         return $app_connect;
     }
+
     static public function connect()
     {
-        if (!empty(self::$connect)) {
-            return self::$connect;
-        } else {
-            $connect_object = new self;
-            return self::$connect = $connect_object->getConnect();
+        if (empty(self::$connect)) {
+            $connect = new self;
+            return self::$connect = $connect->getConnect();
         }
+        return self::$connect;
+
+    }
+
+
+//    static public function connect()
+//    {
+//        if (!empty(self::$connect)) {
+//            return self::$connect;
+//        } else {
+//            $connect_object = new self;
+//            return self::$connect = $connect_object->getConnect();
+//        }
+
+
 //        $connect = mysqli_connect('localhost', $config['user'], $config['password']);
 //
 //        if(!$connect){
@@ -56,5 +61,5 @@ class DBConnect
 //
 //
 //        return mysqli_select_db($connect, 'feed');
-    }
+//    }
 }

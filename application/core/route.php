@@ -23,6 +23,22 @@ class Route
         if (file_exists($model_path)) {
             require_once $model_path;
         }
+
+//        $model = new $model_name;
+//        $model->where ('title', 'asd')
+//                ->where('id', [1, 3])
+//                ->where('id', 3, 'OR');
+//        var_dump($model->toSql());
+//        die;
+
+
+//        $model = new $model_name;
+//        $model->where ('title', 'asd')
+//                ->where('id', [1, 3])
+//                ->where('id', 3, 'OR');
+//        var_dump($model->toSql());
+//        die;
+
         // подцепляем файл с классом контроллера
         $controller_file = strtolower($controller_name) . '.php';
         $controller_path = "../application/controllers/" . $controller_file;
